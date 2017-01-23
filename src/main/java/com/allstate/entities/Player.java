@@ -27,7 +27,7 @@ public class Player {
 //    UNIQUE KEY `email_UNIQUE` (`email`)
 //            ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-    private int user_id;
+    private int id;
     private String user_name;
     private int version;
     private double balance;
@@ -37,15 +37,15 @@ public class Player {
     private Date modified;
     private String email;
 
-    public int getUser_id() {
-        return user_id;
+    public int getId() {
+        return id;
     }
 
     @Id
     @GeneratedValue
     @Column(nullable = false)
-    public void setUser_id(int user_id) {
-        this.user_id = user_id;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getUser_name() {

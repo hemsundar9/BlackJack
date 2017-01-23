@@ -30,7 +30,6 @@ public class Game {
 
     @Id
     @GeneratedValue
-    @Column(nullable = false)
     public void setId(int id) {
         this.id = id;
     }

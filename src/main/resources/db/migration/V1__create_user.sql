@@ -1,5 +1,5 @@
 CREATE TABLE `users` (
-  `user_id` INT NOT NULL AUTO_INCREMENT,
+  `id` INT NOT NULL AUTO_INCREMENT,
   `user_name` varchar(45) NOT NULL,
   `version` INT NOT NULL,
   `balance` bigint(7) DEFAULT NULL,
@@ -8,6 +8,6 @@ CREATE TABLE `users` (
   `creation_time` TIMESTAMP NULL DEFAULT NOW(),
   `modified` TIMESTAMP NULL DEFAULT NOW(),
   `email` varchar(45) NOT NULL,
-  PRIMARY KEY (`user_id`),
+  PRIMARY KEY (`id`),
   UNIQUE KEY `email_UNIQUE` (`email`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
